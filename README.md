@@ -9,6 +9,10 @@ ember-cli-injection allows you to add your own key to the Ember.inject API for
 injection of objects where needed. These available objects are objects
 registered with the application.
 
+This extends the Ember.inject API and because of that, you should be aware of
+the service and controller keys. These are APIs that ship with Ember versions
+1.10 and later.
+
 ## Installation
 
 You install this ember-addon via npm
