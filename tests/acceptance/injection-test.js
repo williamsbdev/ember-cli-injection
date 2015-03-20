@@ -26,3 +26,14 @@ test('Objects can be injected without name, using name of property', function(as
     var controller = lookup('controller:wat');
     assert.equal(controller.baz(), 'baz return value');
 });
+
+test('injections are found for that specific type', function(assert) {
+    var route = lookup('route:wat');
+    assert.equal(route.doTask(), 'task complete');
+});
+
+test('multiple injections of different types can be made into the same object', function(assert) {
+    var controller = lookup('controller:foo');
+    assert.equal(controller.bar(), 'bar return value');
+    assert.equal(controller.startTask(), 'task started');
+});

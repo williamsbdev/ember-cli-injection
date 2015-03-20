@@ -1,6 +1,5 @@
 import Ember from 'ember';
 import register from 'ember-cli-auto-register/register';
-import injection from 'ember-cli-injection/inject';
 
 export function initialize(_, application) {
     // this is because of the app inside of the ember-addon
@@ -8,10 +7,10 @@ export function initialize(_, application) {
     application.name = 'dummy';
 
     register('repos', application);
-    injection('repos');
+    register('managers', application);
 }
 
 export default {
-    name: 'repos',
+    name: 'inject',
     initialize: initialize
 };

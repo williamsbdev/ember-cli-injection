@@ -1,7 +1,8 @@
 import Ember from "ember";
+import {injectRepos} from 'dummy/utils/inject';
 
 var WatController = Ember.Object.extend({
-    "baz-repo": Ember.inject.repos(),
+    "baz-repo": injectRepos(),
     baz: function() {
         return this.get('baz-repo').invoke();
     }
