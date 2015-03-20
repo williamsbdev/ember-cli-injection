@@ -89,7 +89,6 @@ export default FooController;
 Another example of injecting.
 
 ```javascript
-
 // app/routes/wat
 
 import Ember from 'ember'
