@@ -17,8 +17,8 @@ Install this ember-addon via npm
 
 ## API
 
-To get start the objects that will be injected need to be registered with
-the application, like the following:
+To get started the objects that will be injected need to be registered with the
+application, like the following:
 
 ```javascript
 // app/initializers/inject
@@ -40,9 +40,9 @@ export default {
 ```
 
 Once the objects have been registered, create a function that can be used
-for inject the objects of that specific type. When calling the function
-`inject` with `repos`, the returned function will look for `repos` type
-objects.
+for injecting the objects of that specific type. When calling the function
+`inject` with `repos`, the returned function will look for only `repos` type
+objects. See example below:
 
 
 ```javascript
@@ -56,8 +56,10 @@ var injectManagers = inject('managers');
 export {injectRepos, injectManagers};
 ```
 
-Finally, to inject the objects, import the function(s) declared above and
-provide the name in the function if it differs from the variable name used.
+Finally, to inject the objects, import the function(s) declared above. The
+injected object can be name anything, but the if the name of the injected
+object differs from how the object was registered, the registered name will
+need to be provided in the `injectRepos` function.
 
 ```javascript
 // app/controllers/foo
@@ -66,8 +68,13 @@ import Ember from 'ember'
 import {injectRepos, injectManagers} from 'app/utils/inject';
 
 var FooController = Ember.Controller.extend({
+    // this is registered as "repos:foo" so if the property is "fooRepo"
+    // injectRepos will need to take "foo" to find the correct object
     fooRepo: injectRepos('foo'),
     taskManager: injectManagers('task'),
+    // because this is registered as "repos:bar" the property name of bar
+    // will be passed to the injectRepos and the correct object will be found
+    // this is because injectRepos is a computed property
     bar: injectRepos(),
     doAllTheThings: function() {
         this.get('fooRepo').doStuff();
@@ -78,6 +85,8 @@ var FooController = Ember.Controller.extend({
 
 export default FooController;
 ```
+
+Another example of injecting.
 
 ```javascript
 
