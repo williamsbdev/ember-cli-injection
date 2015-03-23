@@ -1,7 +1,7 @@
 # Ember-cli-injection
 
-[![Build Status][]](https://travis-ci.org/williamsbdev/ember-cli-injection)
-[![NPM Downlaads][]](https://www.npmjs.org/package/ember-cli-injection)
+[![Build Status]]
+[![NPM Downlaads]]
 
 ## Description
 
@@ -16,8 +16,8 @@ Install this ember-addon via npm
 
 ## Documentation
 
-- [Basic Example](https://github.com/williamsbdev/ember-cli-injection/wiki/Basic-Example)
-- [Complex Example](https://github.com/williamsbdev/ember-cli-injection/wiki/Complex-Example)
+- [Basic Example]
+- [Complex Example]
 
 ## Running Tests
 
@@ -48,3 +48,7 @@ Licensed under the MIT License
 [Build Status]: https://travis-ci.org/williamsbdev/ember-cli-injection.svg?branch=master
 [NPM Downlaads]: https://img.shields.io/npm/dm/ember-cli-injection.svg
 [issues]: https://github.com/williamsbdev/ember-cli-injection/issues
+[Basic Example]: https://github.com/williamsbdev/ember-cli-injection/wiki/Basic-Example
+[Complex Example]: https://github.com/williamsbdev/ember-cli-injection/wiki/Complex-Example
+[Build Status]: https://travis-ci.org/williamsbdev/ember-cli-injection
+[NPM Downlaads]: https://www.npmjs.org/package/ember-cli-injection
