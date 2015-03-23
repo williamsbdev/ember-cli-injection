@@ -1,7 +1,7 @@
 # Ember-cli-injection
 
-[![Build Status]]
-[![NPM Downlaads]]
+[![Build Status][]](https://travis-ci.org/williamsbdev/ember-cli-injection)
+[![NPM Downlaads][]](https://www.npmjs.org/package/ember-cli-injection)
 
 ## Description
 
@@ -50,5 +50,3 @@ Licensed under the MIT License
 [issues]: https://github.com/williamsbdev/ember-cli-injection/issues
 [Basic Example]: https://github.com/williamsbdev/ember-cli-injection/wiki/Basic-Example
 [Complex Example]: https://github.com/williamsbdev/ember-cli-injection/wiki/Complex-Example
-[Build Status]: https://travis-ci.org/williamsbdev/ember-cli-injection
-[NPM Downlaads]: https://www.npmjs.org/package/ember-cli-injection
