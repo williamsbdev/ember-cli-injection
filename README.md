@@ -37,7 +37,6 @@ or
 ## Issues/Contributions
 
 Please submit bugs to the [issues].
-PRs are welcome.
 
 ## License
 
