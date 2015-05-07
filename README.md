@@ -29,14 +29,12 @@ To run the test, install dependencies:
 Then run:
 
     ember test
+    ember t
 
 or
 
     ember test --server
-
-## Issues/Contributions
-
-Please submit bugs to the [issues].
+    ember t -s
 
 ## License
 
@@ -46,6 +44,5 @@ Licensed under the MIT License
 
 [Build Status]: https://travis-ci.org/williamsbdev/ember-cli-injection.svg?branch=master
 [NPM Downlaads]: https://img.shields.io/npm/dm/ember-cli-injection.svg
-[issues]: https://github.com/williamsbdev/ember-cli-injection/issues
 [Basic Example]: https://github.com/williamsbdev/ember-cli-injection/wiki/Basic-Example
 [Complex Example]: https://github.com/williamsbdev/ember-cli-injection/wiki/Complex-Example
