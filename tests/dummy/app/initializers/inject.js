@@ -1,4 +1,3 @@
-import Ember from 'ember';
 import register from 'ember-cli-auto-register/register';
 
 export function initialize(_, application) {
