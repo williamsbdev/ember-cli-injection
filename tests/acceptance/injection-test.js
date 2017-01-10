@@ -6,7 +6,8 @@ var application;
 
 module('Acceptance: Injection', {
     beforeEach: function() {
-        application = startApp();
+      application = startApp();
+      visit('/');
     },
     afterEach: function() {
         Ember.run(application, 'destroy');

@@ -1,5 +1,6 @@
 import Ember from 'ember';
-import getOwner from 'ember-getowner-polyfill';
+
+const { getOwner } = Ember;
 
 var injection = function(key) {
     return function(name) {
