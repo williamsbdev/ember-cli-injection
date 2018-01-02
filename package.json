@@ -7,10 +7,10 @@
     "test": "tests"
   },
   "scripts": {
+    "build": "ember build",
     "lint:js": "eslint ./*.js addon addon-test-support app config lib server test-support tests",
-    "start": "ember server",
-    "test": "ember test",
-    "build": "ember build"
+    "start": "ember serve",
+    "test": "ember try:each"
   },
   "bugs": {
     "url": "https://github.com/williamsbdev/ember-cli-injection/issues"
